@@ -2,7 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native"
 import { Feather } from '@expo/vector-icons';
 import colors from "../utils/colors";
 
-export default LanguageItem = props => {
+export default function LanguageItem  (props)  {
 
     return <TouchableOpacity
                 style={styles.container}

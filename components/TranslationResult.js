@@ -6,7 +6,7 @@ import { useCallback } from "react";
 import { setSavedItems } from "../store/savedItemsSlice";
 import AsyncStorage from "@react-native-async-storage/async-storage";
 
-export default TranslationResult = props => {
+export default  function TranslationResult  (props) {
     const dispatch = useDispatch();
 
     const { itemId } = props;

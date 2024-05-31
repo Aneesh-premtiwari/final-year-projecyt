@@ -1,7 +1,7 @@
 import { StyleSheet, TouchableOpacity, View, Text } from "react-native"
 import colors from "../utils/colors"
 
-export default SettingsItem = props => {
+export default function SettingsItem  (props)  {
     return <TouchableOpacity style={styles.container} onPress={props.onPress}>
         <View style={styles.textContainer}>
             <Text

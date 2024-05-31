@@ -75,15 +75,20 @@ export default function HomeScreen(props) {
 
         try {
             setIsLoading(true);
-            const result = await translate(enteredText, languageFrom, languageTo);
+            var result = await translate(enteredText, languageFrom, languageTo);
 
             if (!result) {
                 setResultText("");
                 return;
             }
-
+            // result = JSON.parse(result);
+ 
             const textResult = result.translated_text[result.to];
-            setResultText(textResult);
+            console.log('result', result)
+console.log('result.translated_text', result.translated_text)
+console.log('result.translated_text[result.to]', result.translated_text[result.to])
+            console.log("textresult",textResult)  
+                     setResultText(textResult);
 
             const id = uuid.v4();
             result.id = id;
